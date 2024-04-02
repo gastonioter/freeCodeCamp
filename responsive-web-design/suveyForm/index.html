@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8"></meta>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        
+        <header class="text-center">
+            <h1 id="title">Custome satisfaction survey</h1>
+            <p id="description">We have some questions to ask you. Thank you for helping us to improve.</p>
+        </header>
+
+        <main>
+            <form id="survey-form" action="" method="POST" >
+                
+                <fieldset>
+                    <div class="form-group">
+                        <label id="name-label" for="name">Full Name
+                            <input type="text" name="name" id="name" placeholder="Full name" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email Address
+                            <input type="email" name="email" id="email" placeholder="name@example.com" required>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="been-costumer">How long have you been a customer of our company?
+                        <select name="been-costumer" id="dropdown">
+                            <option value="1">I'm new here</option>
+                            <option value="2">form 6 months to 1 year</option>
+                            <option value="3">1 to 2 years</option>
+                            <option value="4">More than 3 years</option>
+                        </select>
+                    </div>
+                </label>
+                    
+                    <label id="number-label" for="numer">How likely are you to recommend this company to friends, co-workers or family? (form 0 to 10)
+                        <input type="number" name="recommend" id="number" min="0" max="10" placeholder="10">
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset>
+                    <legend>How well do our products meet your needs?</legend>
+                    <label for="ext-fine">
+                        <input type="radio" name="meet-needs" value="ext-fine" id="ext-fine">
+                        Extremely fine
+                    </label>
+                    <label for="v-good">
+                        <input type="radio" name="meet-needs" value="v-good" id="v-good">
+                        Very good
+                    </label>
+                    <label for="s-good">
+                        <input type="radio" name="meet-needs" value="s-good" id="s-good">
+                        Something good
+                    </label>
+                    <label for="notsogood">
+                        <input type="radio" name="meet-needs" value="notsogood" id="notsogood">
+                        Not so good
+                    </label>
+                    <label for="nothing-good">
+                        <input type="radio" name="meet-needs" value="nothing-good" id="nothing-good">
+                        Nothing good
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which of the following words would you use to describe our products? Select all that apply.</legend>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <label for="cbx1"><input type="checkbox" name="words-describe" id="cbx1" value="word-1"> Trustworthy</label>
+                            <label for="cbx2"><input type="checkbox" name="words-describe" id="cbx2" value="word-2"> High quality</label>
+                            <label for="cbx3"><input type="checkbox" name="words-describe" id="cbx3" value="word-3"> Good cost-benefit ratio
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label for="cbx4"><input type="checkbox" name="words-describe" id="cbx4" value="word-4"> Expensive prices</label>
+                            <label for="cbx5"><input type="checkbox" name="words-describe" id="cbx5" value="word-5"> Impractical</label>
+                            <label for="cbx6"><input type="checkbox" name="words-describe" id="cbx6" value="word-6"> Poor quality</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <label for="additional">
+                    Tell us more about your expectations
+                    <textarea name="additional" id="additional" cols="30" rows="5"></textarea>
+                    
+                </label>
+                <input type="submit" id="submit" value="Submit">
+
+            </form>
+        </main>
+
+    </div>
+</body>
+
+</html>
