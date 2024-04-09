@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Gaston Castro - My Portfolio</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav id="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#welcome-section">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <header id="welcome-section" class="homepage">
+        <div class="homepage__content container">
+          <div class="homepage__img-wrapper">
+            <img
+              class="homepage__img"
+              src="./img/gaston.png"
+              alt="my profile picture"
+            />
+          </div>
+          <h1 class="homepage__title">Hi, I'm Gaston Castro!</h1>
+          <p class="homepage__subtitle">
+            I'm a <span>web developer</span> with solid foundations of HTML,
+            CSS, and JavaScript. I have done real-world projects but I am
+            looking to work as a <span>team</span> and build
+            <span>great things</span>
+          </p>
+          <p>
+            <a href="#projects" class="homepage__link">Checkout my work</a>
+          </p>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <div class="container">
+        <section class="skills" id="skills">
+          <h2 class="section__heading">
+            My Top <span class="section__keyword">Skills</span>
+          </h2>
+          <div class="skills__list">
+            <div class="skill">
+              <img class="skill__img" src="./img/html.svg" alt="html logo" />
+            </div>
+            <div class="skill">
+              <img class="skill__img" src="./img/css3.svg" alt="html logo" />
+            </div>
+            <div class="skill">
+              <img class="skill__img" src="./img/js.svg" alt="html logo" />
+            </div>
+            <div class="skill">
+              <img
+                class="skill__img"
+                src="./img/boostrap.svg"
+                alt="html logo"
+              />
+            </div>
+            <div class="skill">
+              <img class="skill__img" src="./img/react.svg" alt="html logo" />
+            </div>
+            <div class="skill">
+              <img class="skill__img" src="./img/git.svg" alt="html logo" />
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <h2 class="section__heading">
+            Some of my recent <span class="section__keyword">Projects</span>
+          </h2>
+          <div class="projects__list">
+            <div class="project">
+              <h3 class="project__title project-tile">Calculator</h3>
+              <img
+                class="project__img"
+                src="./img/calculator-app.jpeg"
+                alt="project 1"
+              />
+              <p class="project__description">
+                To put in practice programming logic, I created a simple
+                calculator using HTML, CSS and JavaScript.
+              </p>
+              <a href="" class="project__link">Visit on GitHub</a>
+            </div>
+
+            <div class="project">
+              <h3 class="project__title">Fast Pizza</h3>
+              <img
+                class="project__img"
+                src="./img/fastpizza-app.jpeg"
+                alt="project 1"
+              />
+              <p class="project__description">
+                I make this app to practice concepts related to React Router v6
+                and a State Managment usign RTK. This was stlyed using Tailwaind
+                CSS.
+              </p>
+              <a href="" class="project__link">Visit on GitHub</a>
+            </div>
+
+            <div class="project">
+              <h3 class="project__title">WolrdWise</h3>
+              <img
+                class="project__img"
+                src="./img/worldwise-app.jpeg"
+                alt="project 1"
+              />
+              <p class="project__description">
+                I learned how to make a State Managment using Reducer Hook +
+                Context API.
+              </p>
+              <a href="" class="project__link">Visit on GitHub</a>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <h2 class="section__heading">
+            <span class="section__keyword">Contact</span> me
+          </h2>
+          <p class="contact__subtitle">
+            You can find me on social media or send me an email. I'm always open
+            to new projects and opportunities.
+          </p>
+
+          <div class="socials">
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/gastoncastro/"
+                target="_blank"
+                class="social__link"
+              >
+                <img
+                  class="social__img"
+                  src="./img/linkedin.svg"
+                  alt="linkedin logo"
+                />
+              </a>
+            </div>
+
+            <div class="social">
+              <a
+                href="https://github.com/gastonioter/"
+                target="_blank"
+                id="profile-link"
+                class="social__link"
+              >
+                <img
+                  class="social__img"
+                  src="./img/github.svg"
+                  alt="linkedin logo"
+                />
+              </a>
+            </div>
+
+            <div class="social">
+              <a
+                href="https://www.instagram.com/gastontcastro/"
+                target="_blank"
+                class="social__link"
+              >
+                <img
+                  class="social__img"
+                  src="./img/insta.svg"
+                  alt="linkedin logo"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
