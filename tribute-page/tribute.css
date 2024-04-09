@@ -1,0 +1,115 @@
+:root {
+  --font-heading: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  --font-text: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  --space-sm: 1rem;
+  --space-md: 2.5rem;
+  --space-lg: 4rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100dvh;
+  font-family: var(--font-text);
+  color: #242424;
+  background-image: linear-gradient(
+    to right,
+    rgba(57, 119, 157, 0.849),
+    #fff,
+    rgba(57, 119, 157, 0.849)
+  );
+}
+
+.wrapper {
+  max-width: 114rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #ffffff2c;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+figure {
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.caption {
+  text-align: center;
+  padding: 1rem;
+}
+header {
+  text-align: center;
+}
+
+#title {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -1px;
+}
+.description {
+  text-decoration: dotted;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+#main {
+}
+.intro {
+  font-weight: 700;
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
+.line-time {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: var(--space-md);
+}
+.line-time__hito {
+  list-style: square;
+  margin-bottom: var(--space-md);
+}
+.line-time__text {
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: left;
+}
+.line-time__year {
+  font-weight: 700;
+  font-size: 1.4rem;
+
+}
+
+.footer{
+    text-align: center;
+    background-color: #24242436;
+    padding: 2rem;
+
+}
+
+a,a:visited{
+color: rgb(57, 119, 157);
+font-weight: 600;
+}

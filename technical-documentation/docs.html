@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./docs.css" />
+    <title>Java - Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Java Documentation</header>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Installation">Installation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Hello_World">Hello World</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Functions">Functions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Features">Features</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main" id="main-doc">
+      <section
+        id="Introduction"
+        aria-describedby="intro"
+        role="region"
+        class="main-section"
+      >
+        <header id="intro">Introduction</header>
+        <p>
+          Java is a high-level, object-oriented programming language developed
+          by Sun Microsystems (which was later acquired by Oracle Corporation)
+          and released in 1995. It was designed with the intent to be
+          platform-independent, meaning that Java programs can run on any device
+          that has a Java Virtual Machine (JVM) installed, regardless of the
+          underlying hardware and software platform.
+        </p>
+        <p>
+          Java is known for its "write once, run anywhere" philosophy, which
+          means that Java code can be written on one platform and run on any
+          other platform without modification. This is made possible by the JVM,
+          which interprets Java bytecode and translates it into machine code
+          that can be executed by the host system.
+        </p>
+      </section>
+      <section id="Installation" class="main-section">
+        <header>Installation</header>
+        <p>To install Java, follow these steps:</p>
+        <ol>
+          <li>
+            Download the Java Development Kit (JDK) from the official Oracle
+            website.
+          </li>
+          <li>
+            Choose the appropriate version of the JDK for your operating system
+            (Windows, macOS, or Linux).
+          </li>
+          <li>
+            Click on the download link to start the download process. You may
+            need to create an Oracle account to download the JDK.
+          </li>
+          <li>
+            Once the download is complete, locate the downloaded file on your
+            computer.
+          </li>
+          <li>
+            Double-click on the downloaded file to start the installation
+            process.
+          </li>
+          <li>
+            Follow the on-screen instructions to complete the installation.
+          </li>
+          <li>
+            Once the installation is complete, you can start using Java to
+            develop and run Java applications on your computer.
+          </li>
+        </ol>
+        <p>
+          For more detailed instructions on how to install Java, refer to the
+          official Java documentation on the Oracle website.
+        </p>
+      </section>
+      <section id="Hello_World" class="main-section">
+        <header>Hello World</header>
+        <p>
+          The "Hello, World!" program is a simple program that displays the text
+          "Hello, World!" on the screen. It is often used as the first program
+          to write when learning a new programming language. Here is an example
+          of the "Hello, World!" program in Java:
+        </p>
+        <pre>
+        <code>
+          public class HelloWorld {
+            public static void main(String[] args) {
+              System.out.println("Hello, World!");
+            }
+          }
+        </code>
+
+    </pre>
+        <p>
+          The program consists of a single class called HelloWorld with a single
+          method called main. The main method is the entry point of the program
+          and is where the program starts executing. The main method uses the
+          System.out.println method to print the text "Hello, World!" to the
+          console.
+        </p>
+        <p>To run the "Hello, World!" program, follow these steps:</p>
+        <ol>
+          <li>Open a text editor and copy the code above into a new file.</li>
+          <li>Save the file with a .java extension (e.g., HelloWorld.java).</li>
+          <li>
+            Open a command prompt or terminal window and navigate to the
+            directory where you saved the file.
+          </li>
+          <li>
+            Compile the program by running the following command:
+            <code>javac HelloWorld.java</code>
+          </li>
+          <li>
+            Run the program by running the following command:
+            <code>java HelloWorld</code>
+          </li>
+          <li>
+            You should see the output "Hello, World!" displayed on the screen.
+          </li>
+        </ol>
+      </section>
+
+      <section id="Functions" class="main-section">
+        <header>Functions</header>
+        <p>
+          Functions in Java are blocks of code that perform a specific task.
+          They are defined using the <code>public static</code> keywords
+          followed by the return type of the function, the name of the function,
+          and any parameters that the function takes. Here is an example of a
+          function that adds two numbers together:
+        </p>
+        <pre>
+                <code>
+                public class AddNumbers {
+                    public static int add(int a, int b) {
+                    return a + b;
+                    }
+                }
+                </code>
+        </pre>
+        <p>
+          To use the <code>add</code> function in another part of your program,
+          you can call it like this:
+        </p>
+        <pre>
+                <code>
+                int sum = AddNumbers.add(5, 3);
+                System.out.println("The sum is: " + sum);
+                </code>
+        </pre>
+      </section>
+
+      <section id="Features" class="main-section">
+        <header>Features</header>
+        <p>
+          Java has many features that make it a popular programming language for
+          developing a wide range of applications. Some of the key features of
+          Java include:
+        </p>
+        <ul>
+          <li>
+            Object-oriented: Java is an object-oriented programming language.
+          </li>
+          <li>
+            Platform-independent: Java programs can run on any device with a
+            JVM.
+          </li>
+          <li>Simple: Java is designed to be easy to learn and use.</li>
+          <li>
+            Secure: Java has built-in security features to protect against
+            malicious code.
+          </li>
+          <li>
+            Robust: Java is designed to be reliable and robust, with features
+            like garbage collection.
+          </li>
+          <li>
+            Portable: Java programs can be easily moved from one platform to
+            another.
+          </li>
+          <li>
+            Dynamic: Java supports dynamic memory allocation and garbage
+            collection.
+          </li>
+          <li>
+            High performance: Java programs are compiled into bytecode, which is
+            then interpreted by the JVM for high performance.
+          </li>
+        </ul>
+
+        <p>
+          These are just a few of the many features that make Java a powerful
+          and versatile programming language for developing a wide range of
+          applications.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

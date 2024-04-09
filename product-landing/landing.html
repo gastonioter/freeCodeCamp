@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./landing.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__content container">
+        <div class="header__brand">
+          <img src="./logo.svg" id="header-img" alt="" /><img
+            src="../simple-navbar/logo.svg"
+            alt=""
+          />
+          <div>
+            <span>Cloud Services</span>
+            <p>All in one place</p>
+          </div>
+        </div>
+        <nav id="nav-bar" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#whereweare" class="nav__link nav-link">Where we Are</a>
+            </li>
+            <li class="nav__item">
+              <a href="#solutions" class="nav__link nav-link">Solutions</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link nav-link">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__sec-nav">
+          <a href="" class="button button--outline">Log in</a>
+          <a class="button register-btn">Get Started</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="get-started">
+        <h2 class="section__heading">We'll Contact You</h2>
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+          id="form"
+        >
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+          />
+          <input type="submit" value="Get Started" id="submit" />
+        </form>
+      </section>
+      <section id="whereweare">
+        <h2 class="section__heading">Where we Are</h2>
+        <iframe
+          id="video"
+          title="Inline Frame Example"
+          width="500"
+          height="300"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+        >
+        </iframe>
+      </section>
+      <section id="solutions">
+        <h2 class="section__heading">Our Solutions</h2>
+        <div class="solutions">
+          <div class="solution">
+            <i class=""></i>
+            <i class="fa-solid fa-database"></i>
+            <h3>File Storage</h3>
+            <p>
+              Store your files in our secure servers and access them from
+              anywhere.
+            </p>
+          </div>
+
+          <div class="solution">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>End-to-End Security</h3>
+            <p>We ensure that your data is safe with our 256-bit encryption.</p>
+          </div>
+
+          <div class="solution">
+            <i class="fa-solid fa-phone"></i>
+            <h3>24/7 Support</h3>
+            <p>
+              Our team of experts is available around the clock to help you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="pricing">
+        <h2 class="section__heading">Flexible Pricing</h2>
+        <div class="pricing">
+          <div class="pricing__card">
+            <h3>Free</h3>
+            <p>For individuals</p>
+            <p>Up to 5GB of storage</p>
+            <p>Basic support</p>
+            <a href="" class="button">Get Started</a>
+          </div>
+          <div class="pricing__card">
+            <h3>Pro</h3>
+            <p>For professionals</p>
+            <p>Up to 50GB of storage</p>
+            <p>Priority support</p>
+            <a href="" class="button">Get Started</a>
+          </div>
+          <div class="pricing__card">
+            <h3>Enterprise</h3>
+            <p>For businesses</p>
+            <p>Unlimited storage</p>
+            <p>24/7 support</p>
+            <a href="" class="button">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2021 Cloud Services. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
