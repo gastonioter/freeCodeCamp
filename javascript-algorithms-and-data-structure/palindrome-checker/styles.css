@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --color-primary: rgb(15, 4, 76);
+  --color-primary-light: rgb(20, 30, 97);
+
+  --color-accent-1: #71c3ff;
+
+  --color-withe: #eeeeee;
+  --color-grey: #787a91;
+
+  --color-black: #070f2b;
+
+  --font-primary: "Space Mono", sans-serif;
+  --font-secondary: "Noto Sans Mono", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 300px;
+}
+
+body {
+  background-color: var(--color-withe);
+  color: var(--color-black);
+  font-size: 1.6rem;
+  font-family: var(--font-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+#app {
+  width: min(400px, 100% - 30px);
+  margin-top: -20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem ;
+  background-color: #fff;
+  border-radius: .6rem;
+  padding: 4rem;
+  box-shadow: 0 0 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #2ca3f9;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    font-size: 3.2rem;
+    
+}
+h2 {
+    letter-spacing: -.5px;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font: inherit;
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: .4rem;
+}
+label{
+    display: none;
+}
+
+#result{
+  font-size: 2rem;
+}
+button{
+  width: 100%;
+  background-color: #71c3ff;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: .3rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+.toast {
+    
+    background-color: #2ca3f9;
+    color: var(--color-withe);
+    border-radius: .6rem;
+    padding: 1rem;
+}
+
+.toast p{
+    margin-top: 1rem;
+    font-weight: 600;
+}
