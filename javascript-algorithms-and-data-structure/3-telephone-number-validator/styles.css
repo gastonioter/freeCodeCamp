@@ -17,10 +17,6 @@ body {
   color: #f7f7f7;
   position: relative;
 }
-
-ul {
-  list-style: none;
-}
 .app {
   position: absolute;
   left: 50%;

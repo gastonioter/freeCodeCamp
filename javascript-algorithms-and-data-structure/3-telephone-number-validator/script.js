@@ -7,7 +7,7 @@ function handleAction(e) {
 
   const { target } = e;
 
-  if (target.id === "check-button") {
+  if (target.id === "check-btn") {
     const number = phoneInp.value;
     if (!number) return alert("Please provide a phone number");
 
@@ -17,14 +17,15 @@ function handleAction(e) {
     return;
   }
 
-  if (target.id === "clear-button") {
+  if (target.id === "clear-btn") {
     resultsList.innerHTML = "";
     return;
   }
 }
 
 function validatePhoneNumber(number) {
-  const USAPhoneRegex = /[1*]555 555 5555/;
+  const USAPhoneRegex =
+    /^(1?) ?(\(\d\d\d\)|\d\d\d)[\s|-]?(\d\d\d)[\s|-]?(\d\d\d\d)$/;
 
   return USAPhoneRegex.test(number);
 }
