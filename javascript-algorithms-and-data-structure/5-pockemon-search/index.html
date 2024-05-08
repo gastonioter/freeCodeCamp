@@ -21,6 +21,7 @@
               name="name"
               class="form__input"
               id="search-input"
+              required
             />
             <button type="submit" id="search-button" class="form__submit">
               Search
@@ -30,25 +31,19 @@
 
         <div id="result" class="pokemon">
           <div class="pokemon__hero">
-            <h2 class="pokemon__name" id="pokemon-name">
-              POKEMON <span id="pokemon-id">#00</span>
-            </h2>
             <div class="row">
-              <p id="width">Width: 33</p>
-              <p id="height">Height: 4</p>
+              <h2 class="pokemon__name" id="pokemon-name"></h2>
+              <h2 id="pokemon-id"></h2>
+            </div>
+            <div class="row">
+              <p id="weight"></p>
+              <p id="height"></p>
             </div>
             <div class="pokemon__imgBx">
-              <img
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"
-                alt=""
-                class="pokemon__img"
-              />
+              <img src="" alt="" id="sprite" class="pokemon__img" />
             </div>
 
-            <div class="types" id="types">
-              <span class="type">ESPECIAL 1</span
-              ><span class="type">ESPECIAL 2</span>
-            </div>
+            <div class="types" id="types"></div>
           </div>
 
           <div class="pokemon__data">
@@ -57,33 +52,33 @@
               <div class="col-1 header">Stats</div>
             </div>
             <div class="row">
-              <div class="col-3" id="hp">HP:</div>
-              <div class="col-1">33</div>
+              <div class="col-3">HP:</div>
+              <div class="col-1" id="hp"></div>
             </div>
 
             <div class="row">
-              <div class="col-3" id="attack">Attack:</div>
-              <div class="col-1">33</div>
+              <div class="col-3">Attack:</div>
+              <div class="col-1" id="attack"></div>
             </div>
 
             <div class="row">
-              <div class="col-3" id="defense">Defense:</div>
-              <div class="col-1">33</div>
+              <div class="col-3">Defense:</div>
+              <div class="col-1" id="defense"></div>
             </div>
 
             <div class="row">
-              <div class="col-3" id="special-attack">Sp. Attack:</div>
-              <div class="col-1">33</div>
+              <div class="col-3">Sp. Attack:</div>
+              <div class="col-1" id="special-attack"></div>
             </div>
 
             <div class="row">
-              <div class="col-3" id="special-defense">Sp. Defense:</div>
-              <div class="col-1">33</div>
+              <div class="col-3">Sp. Defense:</div>
+              <div class="col-1" id="special-defense"></div>
             </div>
 
             <div class="row">
-              <div class="col-3" id="speed">Speed:</div>
-              <div class="col-1">33</div>
+              <div class="col-3">Speed:</div>
+              <div class="col-1" id="speed"></div>
             </div>
           </div>
         </div>
