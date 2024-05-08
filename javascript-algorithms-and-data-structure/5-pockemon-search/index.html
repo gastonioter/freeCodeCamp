@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pokémon Search App</title>
+  </head>
+  <body>
+    <main class="app">
+      <h1 class="title">Pokémon Search App</h1>
+      <section class="card">
+        <form action="" class="form">
+          <label class="form__label" for="search-input"
+            >Search for Pokémon Name or ID:
+          </label>
+          <div class="row">
+            <input
+              placeholder="e.g pikachu"
+              type="text"
+              name="name"
+              class="form__input"
+              id="search-input"
+            />
+            <button type="submit" id="search-button" class="form__submit">
+              Search
+            </button>
+          </div>
+        </form>
+
+        <div id="result" class="pokemon">
+          <div class="pokemon__hero">
+            <h2 class="pokemon__name" id="pokemon-name">
+              POKEMON <span id="pokemon-id">#00</span>
+            </h2>
+            <div class="row">
+              <p id="width">Width: 33</p>
+              <p id="height">Height: 4</p>
+            </div>
+            <div class="pokemon__imgBx">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"
+                alt=""
+                class="pokemon__img"
+              />
+            </div>
+
+            <div class="types" id="types">
+              <span class="type">ESPECIAL 1</span
+              ><span class="type">ESPECIAL 2</span>
+            </div>
+          </div>
+
+          <div class="pokemon__data">
+            <div class="row">
+              <div class="col-3 header">Base</div>
+              <div class="col-1 header">Stats</div>
+            </div>
+            <div class="row">
+              <div class="col-3" id="hp">HP:</div>
+              <div class="col-1">33</div>
+            </div>
+
+            <div class="row">
+              <div class="col-3" id="attack">Attack:</div>
+              <div class="col-1">33</div>
+            </div>
+
+            <div class="row">
+              <div class="col-3" id="defense">Defense:</div>
+              <div class="col-1">33</div>
+            </div>
+
+            <div class="row">
+              <div class="col-3" id="special-attack">Sp. Attack:</div>
+              <div class="col-1">33</div>
+            </div>
+
+            <div class="row">
+              <div class="col-3" id="special-defense">Sp. Defense:</div>
+              <div class="col-1">33</div>
+            </div>
+
+            <div class="row">
+              <div class="col-3" id="speed">Speed:</div>
+              <div class="col-1">33</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

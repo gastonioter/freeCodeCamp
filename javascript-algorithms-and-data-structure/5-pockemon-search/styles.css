@@ -1,0 +1,160 @@
+:root {
+  --color-primary: rgb(15, 4, 76);
+  --color-primary-light: rgb(20, 30, 97);
+  --color-accent-1: #71c3ff;
+  --color-withe: #eeeeee;
+  --color-grey: #787a91;
+  --color-black: #070f2b;
+}
+
+::after,
+::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  color: #070f2b;
+  font-size: 1.6rem;
+  padding: 4rem 0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+.form{
+  margin-bottom: 3rem;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  
+}
+.title {
+  color: var(--color-withe);
+  text-align: center;
+  font-size: 3.8rem;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background-color: var(--color-grey);
+  border-radius: 1rem;
+  padding: 2.4rem;
+  box-shadow: 2px 5px 13px 0 rgba(255, 255, 255, 0.3);
+}
+
+.form__label{
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+
+}
+.form__input{
+  background-color: var(--color-withe);
+  font: inherit;
+  color: var(--color-black);
+  border: none;
+  border-radius: 4px;
+  padding: .8rem;
+  padding-left: 1.4rem;
+  outline: none;
+  margin: 0 auto;
+  margin-right: 1rem;
+  display: block;
+}
+
+input:focus{
+  outline: 1px solid var(--color-black);
+  outline-offset: 1px;
+}
+
+
+.form__submit{
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-accent-1);
+  padding: 1rem;
+  cursor: pointer;
+  transition: all .3s;
+  flex: 1;
+
+}
+.form__submit:hover{
+  background-color:#46affa;
+  color: var(--color-black);
+
+}
+
+.pokemon__name{
+  font-size: 2.8rem;
+  font-weight: 600;
+
+}
+#width,
+#height{
+  font-weight: 400;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+.pokemon__img{
+  margin: 0 auto;
+  padding: 2.4rem;
+}
+
+
+.types :not(:last-child){
+  margin-right: .5rem;
+}
+
+.type{
+  background-color: #46affa;
+  padding: .5rem 1rem;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.pokemon__data{
+  margin-top: 1rem;
+  text-align: center;
+}
+.pokemon__data [class*='col']{
+  font-size: 1.8rem;
+  padding: .5rem;
+  border: 1.2px solid #ddd;
+}
+
+
+.pokemon__data .header{
+  font-weight: 600;
+}
+
+.col-1{
+  flex: 1;
+}
+
+.col-3{
+  flex: 3;
+}
