@@ -1,15 +1,16 @@
-let price = 19.5;
+let price = 3.26;
 let cid = [
-  ["PENNY", 0.01],
-  ["NICKEL", 0],
-  ["DIME", 0],
-  ["QUARTER", 0],
-  ["ONE", 1],
-  ["FIVE", 0],
-  ["TEN", 0],
-  ["TWENTY", 0],
-  ["ONE HUNDRED", 0],
+  ["ONE HUNDRED", 100],
+  ["TWENTY", 60],
+  ["TEN", 20],
+  ["FIVE", 55],
+  ["ONE", 90],
+  ["QUARTER", 4.25],
+  ["DIME", 3.1],
+  ["NICKEL", 2.05],
+  ["PENNY", 1.01],
 ];
+
 const unitCurrenciesMap = {
   "ONE HUNDRED": 100,
   TWENTY: 20,
@@ -18,7 +19,7 @@ const unitCurrenciesMap = {
   ONE: 1,
   QUARTER: 0.25,
   DIME: 0.1,
-  NICKEL: 0.05,
+  NIKEL: 0.05,
   PENNY: 0.01,
 };
 
@@ -66,10 +67,6 @@ function handlePurchase(e) {
 
   const { status, change } = checkCashRegister(price, cash, cid);
 
-  if (cash < price) {
-    alert("Customer does not have enough money to purchase the item");
-    return;
-  }
   updateDrawerState(status, change);
 
   // update cid values (cid[1])
@@ -82,8 +79,8 @@ function updateDrawerState(status, change) {
     return;
   }
 
-  if (status === "INSUFFICIENT_FUNDS") {
-    changeDueEl.innerHTML = `<p>Status: INSUFFICIENT_FUNDS</p>`;
+  if (status === "INSUFFICIENT_FOUNDS") {
+    changeDueEl.innerHTML = `<p>INSUFFICIENT_FOUNDS</p>`;
     return;
   }
 
@@ -107,7 +104,7 @@ function checkCashRegister(price, cash, cid) {
   let totalCID = +cid.reduce((acc, curr) => acc + curr[1], 0).toFixed(2);
 
   if (totalCID < changeDue) {
-    return { status: "INSUFFICIENT_FUNDS", change: [] };
+    return { status: "INSUFFICIENT_FOUNDS", change: [] };
   }
 
   if (totalCID === changeDue) {
@@ -123,27 +120,26 @@ function checkCashRegister(price, cash, cid) {
 
   for (const currencyKey in unitCurrenciesMap) {
     const currencyUnitValue = unitCurrenciesMap[currencyKey];
-    let currencyUnitValueTotal = cidObj[currencyKey];
-    let currencyUnitAmout = currencyUnitValueTotal / currencyUnitValue;
+    const currencyUnitValueTotal = cidObj[currencyKey];
+    const currencyUnitAmout = +(
+      currencyUnitValueTotal / currencyUnitValue
+    ).toFixed(0);
+
+    currencyKey === "QUARTER" && console.log(currencyUnitAmout);
 
     while (changeDue >= currencyUnitValue && currencyUnitAmout > 0) {
-      changeDue = +(changeDue - currencyUnitValue).toFixed(2);
+      changeDue -= currencyUnitValue;
+
       cidObj[currencyKey] -= currencyUnitValue;
-      currencyUnitAmout--;
-      currencyUnitValueTotal -= currencyUnitValue;
       const changeCurrency = change.find((el) => el[0] === currencyKey);
       !changeCurrency
         ? change.push([currencyKey, currencyUnitValue])
         : (changeCurrency[1] += currencyUnitValue);
     }
-
-    console.log(changeDue);
   }
 
-  console.log(changeDue.toFixed(2));
-
-  if (+changeDue.toFixed(2) > 0) {
-    return { status: "INSUFFICIENT_FUNDS", change: [] };
+  if (+changeDue.toFixed(0) > 0) {
+    return { status: "INSUFFICIENT_FOUNDS", change: [] };
   }
 
   updateCidArray();
@@ -172,17 +168,10 @@ function clear() {
 }
 
 function init() {
-  initializeCidObj();
-  clear();
-  totalEl.textContent = `Total: $${price}`;
-  purchaseBtn.addEventListener("click", handlePurchase);
   updateChangeInDrawerList();
-}
-
-function initializeCidObj() {
-  cid.forEach((el) => {
-    cidObj[el[0]] = el[1];
-  });
+  totalEl.textContent = `Total: $${price}`;
+  clear();
+  purchaseBtn.addEventListener("click", handlePurchase);
 }
 
 init();

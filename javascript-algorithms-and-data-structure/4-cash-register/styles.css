@@ -1,0 +1,172 @@
+:root {
+  --color-primary: rgb(15, 4, 76);
+  --color-primary-light: rgb(20, 30, 97);
+  --color-accent-1: #71c3ff;
+  --color-withe: #eeeeee;
+  --color-grey: #787a91;
+  --color-black: #070f2b;
+}
+
+::after,
+::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--color-black);
+  font-size: 1.6rem;
+  color: var(--color-withe);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  min-height: 100dvh;
+  padding: 8rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 8rem;
+  width: clamp(30rem, 80%, 115rem);
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.left {
+  flex: 1;
+}
+.right {
+  flex: 2;
+}
+.title {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+#change-due p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#change-due {
+  width: 100%;
+  padding: 1rem;
+
+  margin-bottom: 3rem;
+}
+
+form {
+  padding: 3rem 0 0 0;
+}
+label {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+
+button {
+  display: block;
+  padding: 0.8rem 2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: var(--color-accent-1);
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.cash-register {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cash-register__header {
+  background-color: var(--color-accent-1);
+  padding: 1rem;
+  width: 200px;
+  transform: translateX(30px);
+}
+.cash-register__header p {
+  background-color: black;
+  color: #eeeeee;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.union {
+  height: 30px;
+  width: 40px;
+  transform: translateX(70px);
+  background-color: var(--color-accent-1);
+}
+.cash-register__body {
+  background-color: var(--color-accent-1);
+  flex: 1;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 2rem;
+
+  display: flex;
+  gap: 8rem;
+}
+.cash-register__left {
+  display: grid;
+  grid-template-columns: repeat(3, 20px);
+  grid-template-rows: repeat(3, 20px);
+  gap: 0.5rem;
+}
+.square {
+  background-color: var(--color-black);
+}
+.cash-register__right {
+  padding: 0.8rem;
+  background-color: var(--color-withe);
+  color: var(--color-black);
+  font-size: 1.8rem;
+  flex: 1;
+}
+
+.cash-register__right p {
+  font-weight: 600;
+}
+
+.cash-register__right li {
+  padding: 0.1rem;
+}
+ul {
+  list-style: none;
+}
+.cash-register__footer {
+  margin-top: 1rem;
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-accent-1);
+  position: relative;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: var(--color-black);
+}

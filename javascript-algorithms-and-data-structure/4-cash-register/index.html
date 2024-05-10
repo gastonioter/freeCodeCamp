@@ -3,11 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Cash Register</title>
   </head>
   <body>
-    
+    <h1 class="title">Cash Register Project</h1>
+    <div class="container">
+      <div class="left">
+        <div id="change-due"></div>
+        <form action="" class="form">
+          <label for="cash">Enter cash from customer:</label>
+          <input type="number" name="cash" id="cash" />
+          <button id="purchase-btn" type="submit">Purchase</button>
+        </form>
+      </div>
+      <div class="right">
+        <div class="cash-register">
+          <div class="cash-register__header">
+            <p id="total"></p>
+          </div>
+          <div class="union"></div>
+          <div class="cash-register__body">
+            <div class="cash-register__left">
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+            </div>
+            <div class="cash-register__right">
+              <p>Change in drawer:</p>
+              <ul id="change-in-drawer-list"></ul>
+            </div>
+          </div>
+          <div class="cash-register__footer">
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
